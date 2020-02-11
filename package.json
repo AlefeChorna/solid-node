@@ -5,7 +5,8 @@
   "repository": "https://github.com/AlefeChorna/solid-node.git",
   "author": "Aléfe Chorna <alefechorna99@gmail.com>",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "license": "MIT",
   "devDependencies": {
