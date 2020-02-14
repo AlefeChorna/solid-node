@@ -7,15 +7,16 @@
   "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
-    "test:unit": "yarn test -- --watch -c jest-unit-config.js",
-    "test:integration": "yarn test -- --watch -c jest-integration-config.js",
-    "test:staged": "yarn test -- --findRelatedTests",
-    "test:ci": "yarn test -- --coverage"
+    "test:unit": "yarn test as-is --watch -c jest-unit-config.js",
+    "test:integration": "yarn test as-is --watch -c jest-integration-config.js",
+    "test:staged": "yarn test",
+    "test:ci": "yarn test as-is --coverage"
   },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
+    "@types/validator": "^12.0.1",
     "@typescript-eslint/eslint-plugin": "2",
     "eslint": "6",
     "eslint-config-standard-with-typescript": "^12.0.1",
@@ -29,5 +30,8 @@
     "lint-staged": "^10.0.7",
     "ts-jest": "^25.2.0",
     "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "validator": "^12.2.0"
   }
 }
