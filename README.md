@@ -11,3 +11,7 @@ docker run --name mongodb -p 27017:27017 -d -t mongo
 // start mongo
 docker start mongodb
 ```
+## Clear Jest Cache
+```js
+yarn jest --clearCache
+```
