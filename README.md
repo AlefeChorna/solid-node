@@ -26,6 +26,10 @@ yarn add -D npm-check
 
 ```js
 yarn npm-check -s -u
+
+OR
+
+yarn lib:check
 ```
 
 ### Select the dependendies and update
