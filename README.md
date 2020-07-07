@@ -15,3 +15,17 @@ docker start mongodb
 ```js
 yarn jest --clearCache
 ```
+
+## Update project dependencies
+
+```js
+yarn add -D npm-check
+```
+
+### Then, run:
+
+```js
+yarn npm-check -s -u
+```
+
+### Select the dependendies and update
