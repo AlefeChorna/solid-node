@@ -8,7 +8,7 @@
     "start": "sucrase-node src/main/server.ts",
     "lib:check": "yarn npm-check -s -u",
     "eslint": "yarn eslint 'src/**'",
-    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand --detectOpenHandles",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "yarn test -- --watch -c jest-unit-config.js",
     "test:integration": "yarn test -- --watch -c jest-integration-config.js",
